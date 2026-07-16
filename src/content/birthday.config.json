@@ -1,0 +1,52 @@
+{
+  "recipient": {
+    "name": "Hena",
+    "greeting": "Hey Hena 🌸"
+  },
+  "author": {
+    "name": "Debjeet"
+  },
+  "intro": {
+    "typedLine": "Someone spent days creating something special...",
+    "tapPrompt": "tap the star"
+  },
+  "secret": {
+    "password": "23102008",
+    "hint": "A date that matters — DDMMYYYY",
+    "maxAttempts": 3,
+    "wrongMessage": "Hehe... that's not the secret key 🐼"
+  },
+  "letter": {
+    "title": "For you, Hena",
+    "body": "Dear Hena,\n\nI don't know how to say all of this out loud, so I built you a small quiet corner of the internet instead.\n\nEvery time the world felt loud, thinking about you made it soft again. Your laugh, the way you scrunch your nose when you're focused, the way you make ordinary evenings feel like a memory in the making — I've kept every second of it, carefully, like petals pressed inside a book.\n\nToday is your day. I hope it feels gentle. I hope you feel cherished. I hope the people around you get to see even a little of what I get to see in you.\n\nWhatever this year brings, I want you to know: someone, somewhere, is quietly rooting for every dream of yours. Someone thinks the sky did a good job on October 23, 2008.\n\nHappy birthday, Hena.\nBe brave. Be soft. Be exactly you.\n\n— Debjeet"
+  },
+  "photos": [
+    { "caption": "the first golden hour", "secret": "I still remember what you were wearing." },
+    { "caption": "that quiet evening", "secret": "You laughed at my joke. I replayed it for weeks." },
+    { "caption": "coffee & you", "secret": "I ordered the same drink for a month after this." },
+    { "caption": "the sky was showing off", "secret": "But I was mostly watching you." },
+    { "caption": "little detour", "secret": "Best wrong turn I ever took." },
+    { "caption": "just because", "secret": "No reason. Just — you." }
+  ],
+  "music": [
+    {
+      "title": "For Hena",
+      "artist": "a soft piano",
+      "src": "https://cdn.pixabay.com/download/audio/2022/10/18/audio_31c2fcaa16.mp3"
+    }
+  ],
+  "wishes": [
+    "Stay Happy 🌸",
+    "Stay Healthy 💖",
+    "Keep Smiling 😊",
+    "Achieve Every Dream ✨",
+    "Stay Blessed 🌼",
+    "Be endlessly, unapologetically you 💫"
+  ],
+  "finalMessage": "Some gifts are bought.\nSome gifts are created with time, patience, and care.\nThis little website is one of them.\n\nI hope today brings you happiness, smiles, and beautiful memories.\n\nHappy Birthday.",
+  "credits": {
+    "signature": "Made with ❤ by Debjeet",
+    "thanks": "Thank you for taking this journey.",
+    "restart": "Restart Journey"
+  }
+}
