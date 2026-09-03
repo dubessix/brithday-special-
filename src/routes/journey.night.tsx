@@ -13,13 +13,8 @@ function Moon() {
       animate={{ y: [0, -10, 0] }}
       transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
     >
-      <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_35%_30%,#ffffff,#e8ecf7_45%,#c9d2e6_100%)] shadow-[0_0_90px_28px_rgba(200,215,255,0.28)]" />
-      {/* craters */}
-      <div className="absolute left-[22%] top-[30%] h-4 w-4 rounded-full bg-slate-400/25" />
-      <div className="absolute left-[46%] top-[58%] h-6 w-6 rounded-full bg-slate-400/20" />
-      <div className="absolute left-[62%] top-[24%] h-3 w-3 rounded-full bg-slate-400/20" />
-      {/* shadow disc that carves the crescent */}
-      <div className="absolute -right-7 -top-3 h-32 w-32 rounded-full bg-[#0d0b18] shadow-[inset_6px_0_18px_rgba(255,255,255,0.06)]" />
+      {/* crescent carved with an inset shadow so no opaque disc shows on the sky */}
+      <div className="absolute inset-0 rounded-full shadow-[inset_-22px_-10px_0_0_#f2f5ff] drop-shadow-[0_0_28px_rgba(200,215,255,0.45)]" />
     </motion.div>
   );
 }
