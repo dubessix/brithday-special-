@@ -1,34 +1,46 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { SceneShell } from "@/components/layout/SceneShell";
-import { GlassCard } from "@/components/ui/GlassCard";
 import { content } from "@/lib/content";
 
 export const Route = createFileRoute("/journey/wishes")({ component: Wishes });
 
 function Wishes() {
   const nav = useNavigate();
+  const page = content.wishesPage;
+
   return (
     <SceneShell>
-      <div className="w-full max-w-2xl">
-        <h2 className="text-center font-display text-3xl text-rose-900 dark:text-rose-100">wishes for you</h2>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+      <div className="w-full max-w-2xl py-6">
+        <h2 className="text-center font-display text-4xl text-rose-100">{page.title}</h2>
+        <p className="mt-2 text-center text-sm text-rose-200/60">{page.subtitle}</p>
+
+        <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {content.wishes.map((w, i) => (
-            <motion.div key={i}
+            <motion.div
+              key={i}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.15, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              style={{ animation: `float-y ${4 + (i % 3)}s ease-in-out ${i * 0.4}s infinite` }}>
-              <GlassCard className="text-center">
-                <p className="font-display text-xl text-rose-900 dark:text-rose-100">{w}</p>
-              </GlassCard>
+              transition={{ delay: i * 0.12, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            >
+              {/* High-contrast wish card — readable on the dark night sky */}
+              <div className="flex items-start gap-4 rounded-2xl border border-white/12 bg-white/[0.06] p-5 shadow-[0_20px_50px_-25px_rgba(0,0,0,0.9)] backdrop-blur-xl">
+                <span className="text-2xl leading-none">{w.emoji}</span>
+                <div className="min-w-0">
+                  <p className="font-display text-2xl leading-tight text-rose-50">{w.text}</p>
+                  <p className="mt-1 text-[13px] leading-snug text-rose-200/70">{w.note}</p>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
+
         <div className="mt-10 flex justify-center">
-          <button onClick={() => nav({ to: "/journey/night" })}
-            className="rounded-full bg-rose-500/90 px-6 py-2.5 text-sm text-white shadow-lg">
-            Step into the night →
+          <button
+            onClick={() => nav({ to: "/journey/night" })}
+            className="rounded-full bg-rose-500 px-6 py-2.5 text-sm font-medium text-white shadow-lg shadow-rose-900/40 transition hover:scale-[1.03]"
+          >
+            {page.nextLabel}
           </button>
         </div>
       </div>
