@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { JourneyProvider } from "../lib/journey";
 import { Ambient } from "../components/ambient/Ambient";
+import { content } from "../lib/content";
 
 function NotFoundComponent() {
   return (
@@ -51,7 +52,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      { name: "theme-color", content: "#fadadd" },
+      { name: "theme-color", content: "#0d0b18" },
       { title: "A little something for you 🌸" },
       { name: "description", content: "A quiet, cinematic birthday letter — pages that light up as you tap." },
       { property: "og:title", content: "A little something for you 🌸" },
@@ -75,7 +76,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={content.theme.mode === "dark" ? "dark" : undefined}>
       <head><HeadContent /></head>
       <body>{children}<Scripts /></body>
     </html>

@@ -47,8 +47,8 @@ function Memories() {
   return (
     <SceneShell>
       <div className="w-full max-w-4xl">
-        <h2 className="text-center font-display text-3xl text-rose-900 dark:text-rose-100">little moments</h2>
-        <p className="mt-1 text-center text-sm text-muted-foreground">tap a polaroid to flip</p>
+        <h2 className="text-center font-display text-3xl text-rose-900 dark:text-rose-100">{content.memories.title}</h2>
+        <p className="mt-1 text-center text-sm text-muted-foreground">{content.memories.subtitle}</p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-6">
           {content.photos.map((p, i) => (
@@ -59,7 +59,7 @@ function Memories() {
         <div className="mt-10 flex justify-center">
           <button onClick={() => nav({ to: "/journey/cake" })}
             className="rounded-full bg-rose-500/90 px-6 py-2.5 text-sm text-white shadow-lg">
-            To the cake →
+            {content.memories.nextLabel}
           </button>
         </div>
       </div>
