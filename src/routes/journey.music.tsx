@@ -16,7 +16,7 @@ function MusicScene() {
   return (
     <SceneShell hideAudio>
       <GlassCard className="w-full max-w-sm text-center">
-        <h2 className="font-display text-2xl text-rose-900 dark:text-rose-100">for your ears</h2>
+        <h2 className="font-display text-2xl text-rose-900 dark:text-rose-100">{content.musicPage.title}</h2>
 
         <div className="mx-auto mt-6 grid h-56 w-56 place-items-center">
           <motion.div
@@ -43,7 +43,7 @@ function MusicScene() {
 
         <button onClick={() => nav({ to: "/journey/wishes" })}
           className="mt-8 rounded-full bg-white/60 px-5 py-2 text-sm text-rose-900 backdrop-blur dark:bg-white/10 dark:text-rose-100">
-          Continue →
+          {content.musicPage.nextLabel}
         </button>
       </GlassCard>
     </SceneShell>

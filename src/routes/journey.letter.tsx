@@ -36,7 +36,7 @@ function Letter() {
           <button onClick={() => nav({ to: "/journey/memories" })}
             disabled={!done}
             className="rounded-full bg-rose-500/90 px-6 py-2.5 text-sm text-white shadow-lg backdrop-blur disabled:opacity-40">
-            See our memories →
+            {content.letter.nextLabel}
           </button>
         </div>
       </div>

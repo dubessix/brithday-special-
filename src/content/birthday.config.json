@@ -1,4 +1,7 @@
 {
+  "theme": {
+    "mode": "dark"
+  },
   "recipient": {
     "name": "Hena",
     "greeting": "Hey Hena 🌸"
@@ -18,7 +21,13 @@
   },
   "letter": {
     "title": "For you, Hena",
-    "body": "Dear Hena,\n\nI don't know how to say all of this out loud, so I built you a small quiet corner of the internet instead.\n\nEvery time the world felt loud, thinking about you made it soft again. Your laugh, the way you scrunch your nose when you're focused, the way you make ordinary evenings feel like a memory in the making — I've kept every second of it, carefully, like petals pressed inside a book.\n\nToday is your day. I hope it feels gentle. I hope you feel cherished. I hope the people around you get to see even a little of what I get to see in you.\n\nWhatever this year brings, I want you to know: someone, somewhere, is quietly rooting for every dream of yours. Someone thinks the sky did a good job on October 23, 2008.\n\nHappy birthday, Hena.\nBe brave. Be soft. Be exactly you.\n\n— Debjeet"
+    "body": "Dear Hena,\n\nI don't know how to say all of this out loud, so I built you a small quiet corner of the internet instead.\n\nEvery time the world felt loud, thinking about you made it soft again. Your laugh, the way you scrunch your nose when you're focused, the way you make ordinary evenings feel like a memory in the making — I've kept every second of it, carefully, like petals pressed inside a book.\n\nToday is your day. I hope it feels gentle. I hope you feel cherished. I hope the people around you get to see even a little of what I get to see in you.\n\nWhatever this year brings, I want you to know: someone, somewhere, is quietly rooting for every dream of yours. Someone thinks the sky did a good job on October 23, 2008.\n\nHappy birthday, Hena.\nBe brave. Be soft. Be exactly you.\n\n— Debjeet",
+    "nextLabel": "See our memories →"
+  },
+  "memories": {
+    "title": "little moments",
+    "subtitle": "tap a polaroid to flip",
+    "nextLabel": "To the cake →"
   },
   "photos": [
     { "caption": "the first golden hour", "secret": "I still remember what you were wearing." },
@@ -28,6 +37,17 @@
     { "caption": "little detour", "secret": "Best wrong turn I ever took." },
     { "caption": "just because", "secret": "No reason. Just — you." }
   ],
+  "cake": {
+    "title": "happy birthday 🎂",
+    "candles": 5,
+    "blowLabel": "Blow the candles",
+    "blowHint": "tap — the lights will dim",
+    "nextLabel": "Make a wish → play our song"
+  },
+  "musicPage": {
+    "title": "for your ears",
+    "nextLabel": "Continue →"
+  },
   "music": [
     {
       "title": "For Hena",
@@ -35,14 +55,29 @@
       "src": "https://cdn.pixabay.com/download/audio/2022/10/18/audio_31c2fcaa16.mp3"
     }
   ],
+  "wishesPage": {
+    "title": "wishes for you",
+    "subtitle": "six small hopes, one for each part of your year",
+    "nextLabel": "Step into the night →"
+  },
   "wishes": [
-    "Stay Happy 🌸",
-    "Stay Healthy 💖",
-    "Keep Smiling 😊",
-    "Achieve Every Dream ✨",
-    "Stay Blessed 🌼",
-    "Be endlessly, unapologetically you 💫"
+    { "text": "Stay Happy", "emoji": "🌸", "note": "the everyday kind, not just the loud kind" },
+    { "text": "Stay Healthy", "emoji": "💖", "note": "rest is productive too" },
+    { "text": "Keep Smiling", "emoji": "😊", "note": "it fixes rooms you walk into" },
+    { "text": "Achieve Every Dream", "emoji": "✨", "note": "slowly counts as forward" },
+    { "text": "Stay Blessed", "emoji": "🌼", "note": "may good things find you first" },
+    { "text": "Be endlessly you", "emoji": "💫", "note": "unapologetically, always" }
   ],
+  "night": {
+    "title": "a magical night",
+    "subtitle": "move your finger — the sky notices you",
+    "nextLabel": "Open your gift →"
+  },
+  "gift": {
+    "title": "a secret gift",
+    "subtitle": "tap the box",
+    "nextLabel": "Almost there →"
+  },
   "finalMessage": "Some gifts are bought.\nSome gifts are created with time, patience, and care.\nThis little website is one of them.\n\nI hope today brings you happiness, smiles, and beautiful memories.\n\nHappy Birthday.",
   "credits": {
     "signature": "Made with ❤ by Debjeet",
